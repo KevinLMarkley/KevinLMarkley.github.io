@@ -1,0 +1,42 @@
+//Variable Overrides
+
+$body-bg: #5b0a78;
+
+body
+{
+	background: url(/img/random_grey_variations_@2X.png) repeat 0 0;
+}
+
+$theme-colors: 
+(
+	"primary": #790d9f,
+	"secondary": #24ceb0
+);
+
+.navbar-brand, .nav-link, .navbar-toggler-icon, .navbar-toggler
+{
+	color: rgba(36,206,176, 1);
+}
+
+.jumbotron
+{
+	background-color: #ffffffff !important;
+	border-top: 12px solid rgb(36,206,176);
+	border-bottom: 12px solid rgb(36,206,176);
+	border-left: 4px solid rgb(36,206,176);
+	border-right: 4px solid rgb(36,206,176);
+	font-family: 'Press Start 2P', cursive;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+	font-family: 'Press Start 2P', cursive;
+}
+
+p, div, link, a
+{
+	font-family: 'Play', sans-serif;
+}
+
+// Bootstrap Sass Files
+@import "node_modules/bootstrap/scss/bootstrap";
