@@ -825,8 +825,8 @@ template {
 
 
 .collapsible {
-  background-color: #eee;
-  color: #444;
+  background-color: #777;
+  color: white;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -836,15 +836,13 @@ template {
   font-size: 15px;
 }
 .active, .collapsible:hover {
-  background-color: #ccc;
+  background-color: #555;
 }
 .content {
   padding: 0 18px;
-  background-color: white;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  display: none;
-  overflow: hidden;
+  /* display: none; */
   background-color: #f1f1f1;
 }
