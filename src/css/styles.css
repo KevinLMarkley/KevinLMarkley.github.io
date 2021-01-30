@@ -8,10 +8,10 @@ src: url(https://fonts.googleapis.com/css?family=Press+Start+2P);
 size: a3; } */
 
 /* Code to change the background to an image and navbar color. */
-body {
+/*body {
   background: url(/images/random_grey_variations_@2X.png) repeat 0 0;
   min-width: 992px !important; }
-
+*/
 .navbar-brand, .nav-link, .navbar-toggler-icon, .navbar-toggler {
   color: #24ceb0; }
 /* End code to change the background to an image and navbar color. */
@@ -45,7 +45,12 @@ h6, .h6 {
   font-size: 1rem; }
 
 p, div, link, a, body {
-  font-family: 'Play', sans-serif; }
+  font-family: 'Play', sans-serif;
+  font-size: 100%; }
+
+p2 {
+  font-family: 'Play', sans-serif;
+  font-size: 2rem; }
 /* End changing the font for certain types of text styles. */
 
 /* My code to work with the jumbotron style/class from bootstrap */
@@ -793,29 +798,42 @@ template {
   background-color: #f1f1f1;
 }
 
-/* Tooltip container */
+/* Tooltip container class. */
 .tooltip {
   position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
 }
 
 /* Tooltip text */
-.tooltip .tooltiptext {
+.tooltiptext {
   visibility: hidden;
-  width: 120px;
+  width: 15em;              /*width was 220px, changed to em to be resizeable. */
   background-color: black;
   color: #fff;
   text-align: center;
   padding: 5px 0;
   border-radius: 5px;
 
-  /* Position the tooltip text - see examples below! */
-  /*position: absolute;
-  z-index: 1;*/
+  /* Position the tooltip text. */
+  position: absolute;
+  z-index: 1;
+
+  top: 100%;
+  left: 50%;
+  margin-left: -7.5em; /* Use half of the width (120/2 = 60), to center the tooltip */
 }
 
-/* Show the tooltip text when you mouse over the tooltip container */
+/* Show the tooltip text when you mouse over the tooltip container. */
 .tooltip:hover .tooltiptext {
   visibility: visible;
+}
+
+.tooltiptext::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;  /* At the top of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
 }
