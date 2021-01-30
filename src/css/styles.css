@@ -133,11 +133,10 @@ p, div, link, a, body {
 /* Code for background color of navbar. */
 .bg-primary {
   background-color: #790d9f !important; }
-
-/* a.bg-primary:hover, a.bg-primary:focus,
-button.bg-primary:hover,
-button.bg-primary:focus {
-  background-color: #550970 !important; }
+  a.bg-primary:hover, a.bg-primary:focus,
+  button.bg-primary:hover,
+  button.bg-primary:focus {
+    background-color: #550970 !important; }
 
 .bg-secondary {
   background-color: #aaceb0 !important; }
@@ -154,7 +153,7 @@ a.bg-success:hover, a.bg-success:focus,
 button.bg-success:hover,
 button.bg-success:focus {
   background-color: #1e7e34 !important; }
-End code for background color. */
+/* End code for background color. */
 
 /* Container code */
 .container {
