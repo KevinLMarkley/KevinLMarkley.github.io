@@ -40,11 +40,57 @@
                 </div>
             </nav>
 
+            <!-- This will be the main working area for this page.
+                  Since this is the projects page, projects will be displayed below.
+                  Projects will be grouped together based on a few criteria:
+                  1. Goal of each project.  Example: Testing out a new feature, device, or methodology.
+                  2. Enviornment of each project. Example: Porjects made in Unity, and specifically are made for VR.
+            -->
             <div class="jumbotron">
                 <p class="lead">
                     This is my projects page. You can browse my work below.
                 </p>
+
+              <!-- Creating an unordered list that will show the projects by groups.
+                   Each item in the list will be a collapsible button that shows the a list of projects underneath.
+                   Each project will also be a collapsible that when opens runs the project.
+                   NOTE: the last line maybe changed from buttons to separate pages if that makes things faster or look nicer.-->
+              <ul>
+                <!-- First group in the list. -->
+                <li>
+                  <!-- The button that opens the first group. -->
+                  <button type="button" class="collapsible">
+                  Virtual Reality Projects
+                  </button>
+                  <!-- The list inside the first grouping of projects. -->
+                  <ul>
+                    <!-- The first project in the first group. -->
+                    <li>
+                      <div class="content">
+                        <p>
+                          This is where a project will be displayed.
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <button type="button" class="collapsible">
+                  Virtual Reality Projects
+                  </button>
+                  <div class="content">
+                    <p>
+                      This is where a project will be displayed.
+                    </p>
+                  </div>
+                </li>
+
+              </ul>
             </div>
         </div>
+
+        <!-- Load the JS that is used to open and close the collapsible buttons that are used in the jumbotron. -->
+        <script type="text/javascript" src="..\js\CollapsibleButton.js"> </script>
 </body>
 </html>
