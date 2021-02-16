@@ -776,26 +776,32 @@ template {
 
 
 .collapsible {
-  background-color: #777;
+  background-color: teal;
   color: white;
   cursor: pointer;
-  padding: 18px;
+  padding: 15px;
   width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
+  border-style: solid solid solid double;
+  border-width: thin thin thin 25px;
+  border-color: #790d9f #790d9f #790d9f black;
+  text-align: center;
+  outline: none;            /* outline: inset black; */
+  font-size: 20px;
+  font-family: 'Press Start 2P', cursive;
 }
 .active, .collapsible:hover {
-  background-color: #555;
+  background-color: #790d9f;
 }
 .content {
-  padding: 0 18px;
+  color: white;
+  font-size: 15px;
+  font-family: 'Play', sans-serif;
+  padding: 0rem 2rem 0rem 2rem;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   /* display: none; */
-  background-color: #f1f1f1;
+  background-color: black;
 }
 
 /* Tooltip container class. */
