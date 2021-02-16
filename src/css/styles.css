@@ -785,15 +785,18 @@ template {
   border-width: thin thin thin 25px;
   border-color: #790d9f #790d9f #790d9f black;
   text-align: center;
-  outline: none;
+  outline: none;            /* outline: inset black; */
   font-size: 20px;
+  font-family: 'Press Start 2P', cursive;
 }
 .active, .collapsible:hover {
   background-color: #790d9f;
 }
 .content {
   color: white;
-  padding: 0 18px;
+  font-size: 15px;
+  font-family: 'Play', sans-serif;
+  padding: 0rem 2rem 0rem 2rem;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
