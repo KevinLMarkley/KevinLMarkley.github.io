@@ -16,6 +16,7 @@ size: a3; } */
   color: #24ceb0; }
 /* End code to change the background to an image and navbar color. */
 
+/* <editor-fold> Headings and Text */
 /* Changing the font to get different sizes of text and different fonts. */
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -52,6 +53,7 @@ p2 {
   font-family: 'Play', sans-serif;
   font-size: 2rem; }
 /* End changing the font for certain types of text styles. */
+/* </editor-fold> End Headings and Text */
 
 /* My code to work with the jumbotron style/class from bootstrap */
 .jumbotron {
@@ -774,7 +776,9 @@ template {
   align-items: center; }
 /* End code for navbar-collapse */
 
-
+/* <editor-fold> Collapsible Buttons and Content */
+/* Design of the collapsible buttons on the projects page.
+  As well as their content. */
 .collapsible {
   background-color: teal;
   color: white;
@@ -803,7 +807,9 @@ template {
   /* display: none; */
   background-color: black;
 }
+/* </editor-fold> End Collapsible Buttons and Content */
 
+/* <editor-fold> Tooltips */
 /* Tooltip container class. */
 .tooltip {
   position: relative;
@@ -843,3 +849,45 @@ template {
   border-style: solid;
   border-color: transparent transparent black transparent;
 }
+/* </editor-fold> End Tooltips */
+
+/* <editor-fold> Inner List Elements  */
+/* Code for changing the list bullets inside the collapsible buttons on the project page. */
+.inner_list {
+  list-style: none;           /* Remove default bullets */
+  padding: 0;                 /* Remove padding */
+  margin: 0;                  /* Remove margins */
+}
+
+/* The below code was meant to simply change the bullets in the list to be something that is visible.
+    Was replaced with code that removed the bullets entirely and made the list items into a list group. */
+/* .inner_list .inner_list_element::before {
+    content: "\2022";           /* Add content: \2022 is the CSS Code/unicode for a bullet */
+/*  color: red;                 /* Change the color */
+/*  font-weight: bold;          /* If you want it to be bold */
+/*  display: inline-flex;       /* Needed to add space between the bullet and the text */
+/*  width: 5px;                 /* Also needed for space (tweak if needed) */
+/*  margin-left: 5px;           /* Also needed for space (tweak if needed) */
+/* } */
+
+.inner_list .inner_list_element {
+  border: 5px solid white;           /* Add a thin border to each list item */
+  margin-top: -5px;                 /* Prevent double borders */
+  background-color: black;
+  padding: 15px;                    /* Add some padding */
+}
+
+/* Solid border */
+hr.solid {
+  border-top: 2px solid #bbb;
+  border-radius: 5px;
+}
+
+.padded_header {
+  padding-left: 0.5em;
+}
+.padded_text {
+  padding-left: 2em;
+}
+/* End code for inner list. */
+/* </editor-fold> End Inner List Elements */
