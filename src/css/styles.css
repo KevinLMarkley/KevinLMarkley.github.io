@@ -1,3 +1,4 @@
+/* <editor-fold> Font and Body */
 /* @font-face {
 font-family: 'Press Start 2P', cursive;
 src: url(.\Press_Start_2P\PressStart2P-Regular);
@@ -12,10 +13,16 @@ size: a3; } */
   background: url(/images/random_grey_variations_@2X.png) repeat 0 0;
   min-width: 992px !important; }
 */
+/* </editor-fold> End Headings and Text */
+
+/* Changes all html pages to have a black background. */
+html {background-color: black}
+
 .navbar-brand, .nav-link, .navbar-toggler-icon, .navbar-toggler {
-  color: #24ceb0; }
+  color: #25edb9; }
 /* End code to change the background to an image and navbar color. */
 
+/* <editor-fold> End Font and Body*/
 /* Changing the font to get different sizes of text and different fonts. */
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -52,22 +59,32 @@ p2 {
   font-family: 'Play', sans-serif;
   font-size: 2rem; }
 /* End changing the font for certain types of text styles. */
+/* </editor-fold> End Headings and Text */
 
-/* My code to work with the jumbotron style/class from bootstrap */
+/* My code to work with the jumbotron style/class from bootstrap
+Original white background: #ffffffff
+Original background dark purple color: #790d9f (this has been entirely replaced with #550970 now.)
+Original background, darker purple color: #550970
+Original light green border colors: #24ceb0 (this has been changed to #25edb9.)
+Current light green border color, Triadic Color, lightened twice for contrast: #25edb9.
+Original grey color: #e9ecef
+May want to change border colors to dark orange.
+*/
 .jumbotron {
-  background-color: #ffffffff !important;
-  border-top: 12px solid #24ceb0;
-  border-bottom: 12px solid #24ceb0;
-  border-left: 4px solid #24ceb0;
-  border-right: 4px solid #24ceb0;
-  font-family: 'Press Start 2P', cursive; }
+  background-color: #00000000 !important;
+  border-top: 12px solid #25edb9;
+  border-bottom: 12px solid #25edb9;
+  border-left: 4px solid #25edb9;
+  border-right: 4px solid #25edb9;
+  font-family: 'Press Start 2P', cursive;
+  color: #25edb9; }
 /* End my code to work with the jumbotron style/class from bootstrap */
 
 /*Jumbotron code from bootstrap*/
   .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
-  background-color: #e9ecef;
+  background-color: #ffffffff;
   border-radius: 0.3rem; }
   @media (min-width: 576px) {
     .jumbotron {
@@ -77,6 +94,7 @@ p2 {
   font-size: 1.25rem;
   font-weight: 300; }
 
+/* <editor-fold> Jumbotron Display Sizes */
 /* .display-1 { */
   /* font-size: 6rem; */
   /* font-weight: 300; */
@@ -97,6 +115,7 @@ p2 {
   /* font-weight: 300; */
   /* line-height: 1.2; } */
 /* End jumbotron code from bootstrap */
+/* </editor-fold> End Jumbotron Display Sizes */
 
 /* Navbar code */
 .navbar {
@@ -137,11 +156,13 @@ p2 {
 
 /* Code for background color of navbar. */
 .bg-primary {
-  background-color: #790d9f !important; }
+  background-color: #550970 !important; }
   a.bg-primary:hover, a.bg-primary:focus,
   button.bg-primary:hover,
   button.bg-primary:focus {
     background-color: #550970 !important; }
+
+/* <editor-fold> BG Secondary */
 /*
 .bg-secondary {
   background-color: #aaceb0 !important; }
@@ -159,6 +180,7 @@ button.bg-success:hover,
 button.bg-success:focus {
   background-color: #1e7e34 !important; }
 End code for background color. */
+/* </editor-fold> End BG Secondary */
 
 /* Container code */
 .container {
@@ -188,6 +210,7 @@ End code for background color. */
   margin-right: auto;
   margin-left: auto; }
 
+/* <editor-fold> Badges, Tables, and Expanded Navbars */
 /* .badge {
     border: 1px solid #000; }
 .table {
@@ -260,6 +283,7 @@ End code for background color. */
     .navbar-expand-md > .container-fluid {
       flex-wrap: nowrap; } */
 /* End navbar-expand-md code*/
+/* </editor-fold> End Badges, Tables, and Expanded Navbar */
 
 /* Code for navbar expand lg */
 @media (max-width: 991.98px) {
@@ -439,7 +463,7 @@ End code for background color. */
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #790d9f; }
+  background-color: #550970; }
 
  .navbar-nav {
   display: flex;
@@ -504,10 +528,11 @@ End code for background color. */
   align-items: center; }
 /* End collpase code */
 
+/* <editor-fold> Buttons and Dropdowns */
 /* Button code */
 /* .btn-link {
   font-weight: 400;
-  color: #790d9f;
+  color: #550970;
   background-color: transparent; }
   .btn-link:hover {
     color: #430758;
@@ -766,6 +791,7 @@ template {
 .dropright .dropdown-toggle::after {
   vertical-align: 0; } */
 /* End dropdown code */
+/* </editor-fold> End Buttons and Dropdowns */
 
 /* Code for navbar-collapse */
 .navbar-collapse {
@@ -774,26 +800,28 @@ template {
   align-items: center; }
 /* End code for navbar-collapse */
 
-
+/* <editor-fold> Collapsible Buttons and Content */
+/* Design of the collapsible buttons on the projects page.
+  As well as their content. */
 .collapsible {
-  background-color: teal;
-  color: white;
+  background-color: #247009;  /* was a white color, changed to Complementary green. */
+  color: #25edb9;   /* was a white color, changed to Complementary green. */
   cursor: pointer;
   padding: 15px;
   width: 100%;
   border-style: solid solid solid double;
   border-width: thin thin thin 25px;
-  border-color: #790d9f #790d9f #790d9f black;
+  border-color: black black black black;  /* changed from #550970 #550970 #550970 black; to current all black. */
   text-align: center;
   outline: none;            /* outline: inset black; */
   font-size: 20px;
   font-family: 'Press Start 2P', cursive;
 }
 .active, .collapsible:hover {
-  background-color: #790d9f;
+  background-color: #550970;
 }
 .content {
-  color: white;
+  color: #25edb9; /* was a white color, then changed to black, then to be consistent the light green text color. */
   font-size: 15px;
   font-family: 'Play', sans-serif;
   padding: 0rem 2rem 0rem 2rem;
@@ -801,9 +829,11 @@ template {
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   /* display: none; */
-  background-color: black;
+  background-color: #550970;
 }
+/* </editor-fold> End Collapsible Buttons and Content */
 
+/* <editor-fold> Tooltips */
 /* Tooltip container class. */
 .tooltip {
   position: relative;
@@ -843,3 +873,46 @@ template {
   border-style: solid;
   border-color: transparent transparent black transparent;
 }
+/* </editor-fold> End Tooltips */
+
+/* <editor-fold> Inner List Elements  */
+/* Code for changing the list bullets inside the collapsible buttons on the project page. */
+.inner_list {
+  list-style: none;           /* Remove default bullets */
+  padding: 0;                 /* Remove padding */
+  margin: 0;                  /* Remove margins */
+}
+
+/* The below code was meant to simply change the bullets in the list to be something that is visible.
+    Was replaced with code that removed the bullets entirely and made the list items into a list group. */
+/* .inner_list .inner_list_element::before {
+    content: "\2022";           /* Add content: \2022 is the CSS Code/unicode for a bullet */
+/*  color: red;                 /* Change the color */
+/*  font-weight: bold;          /* If you want it to be bold */
+/*  display: inline-flex;       /* Needed to add space between the bullet and the text */
+/*  width: 5px;                 /* Also needed for space (tweak if needed) */
+/*  margin-left: 5px;           /* Also needed for space (tweak if needed) */
+/* } */
+
+.inner_list .inner_list_element {
+  /* was white, changed to black to match background of pages. */
+  border: 5px solid black;           /* Add a thin border to each list item */
+  margin-top: -5px;                 /* Prevent double borders */
+  background-color: #247009;    /* was black, changed to Complementary green. */
+  padding: 15px;                    /* Add some padding */
+}
+
+/* Solid border */
+hr.solid {
+  border-top: 2px solid #bbb;
+  border-radius: 5px;
+}
+
+.padded_header {
+  padding-left: 0.5em;
+}
+.padded_text {
+  padding-left: 2em;
+}
+/* End code for inner list. */
+/* </editor-fold> End Inner List Elements */

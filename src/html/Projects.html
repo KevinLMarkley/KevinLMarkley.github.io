@@ -53,59 +53,127 @@
 
               <!-- Creating an unordered list that will show the projects by groups.
                    Each item in the list will be a collapsible button that shows the a list of projects underneath.
-                   Each project will also be a collapsible that when opens runs the project.
-                   NOTE: the last line maybe changed from buttons to separate pages if that makes things faster or look nicer.-->
+
+                   NOTE: REMOVE: Each project will also be a collapsible that when opens runs the project.
+                   NOTE: the last line maybe changed from buttons to separate pages if that makes things faster or look nicer.
+
+                   Changed the inner collapsible buttons to be just text sections in a list group.
+                   They will contain a button that loads the appropiate project,
+                   but the inner details won't be hidden as previously attempted.-->
               <ul>
+<!-- <editor-fold> VR Projects -->
                 <!-- First group in the list. -->
                 <li>
                   <!-- The button that opens the first group. -->
                   <button type="button" class="collapsible">Virtual Reality Projects</button>
                   <div class="content">
                     <!-- The list inside the first grouping of projects. -->
-                    <ul>
+                    <ul class="inner_list">
                       <!-- The first project in the first group. -->
-                      <li>
-                        <button type="button" class="collapsible">First VR Project</button>
-                          <div class="content">
-                            <p>This is where a VR project will be displayed.</p>
-                          </div>
+                      <li class="inner_list_element">
+                        <h4 class="padded_header">First VR Project</h4>
+
+                        <!-- Adding a line here to separate the header from the details section below. -->
+                          <hr class="solid">
+
+                          <!-- Contains the details for the project and a load button that starts loading the project. -->
+                            <p class="padded_text"><strong>Details:</strong> Please view my work on the below page</p>
+                            <embed src="https://xrlab.kennesaw.edu/index.php/projects/#Project-VR-CyberSecurityAwarenessTraining" type="application/pdf" width="100%" height="1200px" />
+                      </li>
+
+                      <li class="inner_list_element">
+                        <h4 class="padded_header">Second VR Project</h4>
+                          <hr class="solid">
+
+                            <!-- Contains the details for the project and a load button that starts loading the project. -->
+                            <p class="padded_text"><strong>Details:</strong> This is where a VR project will be displayed.</p>
+                      </li>
+
+                      <li class="inner_list_element">
+                        <h4 class="padded_header">Third VR Project</h4>
+                          <hr class="solid">
+
+                            <!-- Contains the details for the project and a load button that starts loading the project. -->
+                            <p class="padded_text"><strong>Details:</strong> This is where a VR project will be displayed.</p>
                       </li>
                     </ul>
                   </div>
                 </li>
+<!-- </editor-fold> -->
 
+<!-- <editor-fold> AR Projects -->
                 <li>
                   <button type="button" class="collapsible">Augmented Reality</button>
                   <div class="content">
-                    <!-- The list inside the second grouping of projects. -->
-                    <ul>
-                      <!-- The first project in the second group. -->
-                      <li>
-                        <button type="button" class="collapsible">First AR Project</button>
-                          <div class="content">
-                            <p>This is where a AR project will be displayed.</p>
-                          </div>
-                      </il>
+                    <!-- The list inside the AR grouping of projects. -->
+                    <ul class="inner_list">
+                      <!-- The first project in the AR group. -->
+                      <li class="inner_list_element">
+                        <h4 class="padded_header">First AR Project</h4>
+
+                          <!-- Adding a line here to separate the header from the details section below. -->
+                          <hr class="solid">
+
+                            <!-- Contains the details for the project and a load button that starts loading the project. -->
+                            <p class="padded_text"><strong>Details:</strong> This is where a AR project will be displayed.</p>
+                      </li>
+
+                      <li class="inner_list_element">
+                        <h4 class="padded_header">Second AR Project</h4>
+                          <hr class="solid">
+
+                            <!-- Contains the details for the project and a load button that starts loading the project. -->
+                            <p class="padded_text"><strong>Details:</strong> This is where a AR project will be displayed.</p>
+                      </li>
+
+                      <li class="inner_list_element">
+                        <h4 class="padded_header">Third AR Project</h4>
+                          <hr class="solid">
+
+                            <!-- Contains the details for the project and a load button that starts loading the project. -->
+                            <p class="padded_text"><strong>Details:</strong> This is where a AR project will be displayed.</p>
+                      </li>
                     </ul>
                   </div>
                 </li>
+<!-- </editor-fold> -->
 
+<!-- <editor-fold> AI Projects -->
                 <li>
                   <button type="button" class="collapsible">Artificial Intelligence</button>
                   <div class="content">
-                    <!-- The list inside the third grouping of projects. -->
-                    <ul>
-                      <!-- The first project in the third group. -->
-                      <li>
-                        <button type="button" class="collapsible">First AI Project</button>
-                          <div class="content">
-                            <p>This is where an AI project will be displayed.</p>
-                          </div>
-                      </il>
+                    <!-- The list inside the AI grouping of projects. -->
+                    <ul class="inner_list">
+                      <!-- The first project in the AI group. -->
+                      <li class="inner_list_element">
+                        <h4 class="padded_header">First AI Project</h4>
+
+                          <!-- Adding a line here to separate the header from the details section below. -->
+                          <hr class="solid">
+
+                            <!-- Contains the details for the project and a load button that starts loading the project. -->
+                            <p class="padded_text"><strong>Details:</strong> This is where a AI project will be displayed.</p>
+                      </li>
+
+                      <li class="inner_list_element">
+                        <h4 class="padded_header">Second AI Project</h4>
+                          <hr class="solid">
+
+                            <!-- Contains the details for the project and a load button that starts loading the project. -->
+                            <p class="padded_text"><strong>Details:</strong> This is where a AI project will be displayed.</p>
+                      </li>
+
+                      <li class="inner_list_element">
+                        <h4 class="padded_header">Third AI Project</h4>
+                          <hr class="solid">
+
+                            <!-- Contains the details for the project and a load button that starts loading the project. -->
+                            <p class="padded_text"><strong>Details:</strong> This is where a AI project will be displayed.</p>
+                      </li>
                     </ul>
                   </div>
                 </li>
-
+<!-- </editor-fold> -->
               </ul>
             </div>
         </div>
